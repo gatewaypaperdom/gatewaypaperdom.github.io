@@ -16,7 +16,14 @@ function App() {
     {
       setMobileMenuOpen(!bMobileMenu);
     }
-  
+
+  const handleLinkClick = (e) => {
+    e.preventDefault();
+    const targetId = e.currentTarget.getAttribute("href").substring(1);
+    document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
+    toggleMobileMenu(); 
+  };
+
   const toggleShowMore = () => setShowMore(!showMore);
 
   return (
@@ -39,11 +46,15 @@ function App() {
           
           {/* flex flex-col items-center space-y-4 text-gray-700 absolute top-16 left-1/2 transform -translate-x-1/2 w-11/12 bg-white py-6 shadow-lg rounded-lg transition-all duration-300 ease-in-out ${bMobileMenu ? 'block' : 'hidden'} md:hidden */}
 
-          <ul className={`flex flex-col space-y-4 text-gray-800 uppercase leading-tight font-semibold text-sm absolute top-16 left-1/2 transform -translate-x-1/2 w-11/12 bg-slate-200 py-6 shadow-md rounded-lg ${bMobileMenu ? 'block' : 'hidden'} md:hidden`}>
-            <li><a href="#services" className="hover:text-blue-500 transition-colors duration-200" onClick={toggleMobileMenu}>Services</a></li>
-            <li><a href="#values" className="hover:text-blue-500 transition-colors duration-200" onClick={toggleMobileMenu}>Our Values</a></li>
-            <li><a href="#team" className="hover:text-blue-500 transition-colors duration-200" onClick={toggleMobileMenu}>Meet the team</a></li>
-            <li><a href="#contact" className="hover:text-blue-500 transition-colors duration-200" onClick={toggleMobileMenu}>Contact Us</a></li>
+          <ul className={`flex flex-col space-y-4 text-gray-800 uppercase leading-tight font-semibold text-sm absolute 
+                          top-16 left-1/2 z-50 transform -translate-x-1/2 w-11/12 bg-slate-200 py-6 shadow-md rounded-lg 
+                          transition-all duration-300 ease-in-out 
+                          ${bMobileMenu ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 -translate-y-4 scale-95 pointer-events-none'}
+                          md:hidden`}>
+            <li><a href="#services" className="hover:text-gateway-logo transition-colors duration-200" onClick={handleLinkClick}>Services</a></li>
+            <li><a href="#values" className="hover:text-gateway-logo transition-colors duration-200" onClick={handleLinkClick}>Our Values</a></li>
+            <li><a href="#team" className="hover:text-gateway-logo transition-colors duration-200" onClick={handleLinkClick}>Meet the team</a></li>
+            <li><a href="#contact" className="hover:text-gateway-logo transition-colors duration-200" onClick={handleLinkClick}>Contact Us</a></li>
           </ul>
         </nav>
 
@@ -74,7 +85,7 @@ function App() {
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center leading-tight font-lora">
             Our Services
           </h2>
-          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col">
               <h3 className="text-xl font-semibold text-gateway-logo mb-2">Fostering Commercial Relationships</h3>
               <p className="text-gray-700 mt-2 leading-relaxed">
@@ -304,7 +315,7 @@ function App() {
 
           {/* Copyright Notice */}
           <p>Gateway Paper Company Limited © {new Date().getFullYear()}</p>
-        <button><i className = "fa fa-linkedin text-gateway-logo text-sm"></i></button>
+        <button><a href = "https://www.linkedin.com/company/gatewaypapercompany/"><i className = "fa fa-linkedin text-gateway-logo text-sm"></i></a></button>
       </footer>
         
 
