@@ -252,7 +252,7 @@ function App() {
         <section id="contact" className="mb-12 py-12 sm:px-12 px-6 bg-gray-50 border-gray-300 border-t">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center leading-tight font-lora pb-5">Contact Us</h2>
           <p className="text-md sm:text-lg text-gray-600 text-center">
-            Have any questions or inquiries? We’re here to help.
+            Have any questions or inquiries? We’re here to help!
           </p>
 
           <div className="max-w-lg mx-auto mt-8 space-y-6">
