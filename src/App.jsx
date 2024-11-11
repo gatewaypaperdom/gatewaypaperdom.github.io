@@ -3,6 +3,7 @@ import logo from './assets/GATEWAY-2.png'
 import cpyright_logo from './assets/copyright-logo.png'
 import mobile_menu from './assets/mobile_menu_icon.svg'
 import member_1 from './assets/rishabh_team_img.jpg'
+import member_2 from './assets/shankar_team_img.jpeg'
 import logo_no_text from './assets/logo-with-text.png'
 import mail_icon from './assets/mail_icon_team.svg'
 import phone_icon from './assets/call_contact.svg'
@@ -184,8 +185,8 @@ function App() {
             </div>
             <div className="flex flex-col items-center bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
               <img
-                src = {member_1}
-                alt = "Rishabh M."
+                src = {member_2}
+                alt = "Shankar M."
                 className='w-20 h-20 rounded-full object-cover border-2 border-gray-300 mb-4 sm:mb-0'
               />
               <div>
@@ -198,7 +199,13 @@ function App() {
                     shankar@gatewaypaper.co
                   </a>
                 </div>                
-                <p className="text-gray-600 text-sm mt-4 leading-relaxed">Mr. Shankar C Mundhra is a distinguished leader in the Indian pulp and paper industry, whose expertise has been instrumental in shaping distribution supply chains for pulp and paper mills worldwide over the past five decades. As Director of Bombay Paper Udyog, Mr. Mundhra oversees the annual supply of almost 60,000 metric tons of finished pulp and paper products globally. Known for his strategic vision and commitment to environmental stewardship, Mr. Mundhra brings a unique perspective and invaluable market insight to Gateway Paper.
+                <p className="text-gray-600 text-sm mt-4 leading-relaxed">
+                  Mr. Shankar C Mundhra is a distinguished leader in the Indian pulp and paper industry,
+                  whose expertise has been instrumental in shaping distribution supply chains for pulp and paper
+                  mills worldwide over the past five decades. As Director of Bombay Paper Udyog, Mr. Mundhra oversees 
+                  the annual supply of almost 60,000 metric tons of finished pulp and paper products globally. 
+                  Known for his strategic vision and commitment to environmental stewardship, 
+                  Mr. Mundhra brings a unique perspective and invaluable market insight to Gateway Paper.
                 </p>
               </div>              
             </div>
@@ -242,7 +249,7 @@ function App() {
           </div>
         </section>
 
-        <section id="contact" className="mb-12 py-10 px-6 bg-gray-100">
+        <section id="contact" className="mb-12 py-12 sm:px-12 px-6 bg-gray-50 border-gray-300 border-t">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center leading-tight font-lora pb-5">Contact Us</h2>
           <p className="text-md sm:text-lg text-gray-600 text-center">
             Have any questions or inquiries? We’re here to help.
