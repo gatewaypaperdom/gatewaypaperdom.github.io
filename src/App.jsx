@@ -284,7 +284,7 @@ function App() {
                 <input
                   type="text"
                   id="name"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-gateway-logo"
                   required
                 />
               </div>
@@ -293,7 +293,7 @@ function App() {
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-gateway-logo"
                   required
                 />
               </div>
@@ -302,7 +302,7 @@ function App() {
                 <textarea
                   id="message"
                   rows="4"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-gateway-logo"
                   required
                 ></textarea>
               </div>
