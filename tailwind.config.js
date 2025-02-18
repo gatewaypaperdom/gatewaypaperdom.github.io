@@ -25,6 +25,9 @@ export default {
       colors:
       {
         'gateway-logo': '#5c6bc0',
+        'gateway-logo-complement' : '#fffffe',
+        'gateway-logo-dark': '#1a237e',
+        'gateway-logo-light': '#a5b6f5',
       },
       fontFamily: {
         bodoni: ['Bodoni Moda', 'serif'], 
