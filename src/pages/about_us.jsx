@@ -1,4 +1,4 @@
-import about_us_image from '../assets/[About Us].jpeg'
+import about_us_image from '../assets/about_us.jpeg'
 import handshake_icon from '../assets/handshake-icon.png'
 import recycle_icon from '../assets/recycling-icon.png'
 import quality_icon from '../assets/quality-icon.png'
