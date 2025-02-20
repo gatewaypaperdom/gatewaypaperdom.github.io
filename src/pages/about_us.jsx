@@ -1,4 +1,4 @@
-import about_us_image from '../assets/about_us.jpeg'
+import about_us_image from '../assets/card_1.jpeg'
 import handshake_icon from '../assets/handshake-icon.png'
 import recycle_icon from '../assets/recycling-icon.png'
 import quality_icon from '../assets/quality-icon.png'
@@ -8,30 +8,29 @@ import partnership_icon from '../assets/integrity-icon.png'
 const AboutUs = () => {
     return (
         <>
-        <div class="w-full">
-            <img src = {about_us_image} alt = "About Us" class = "w-full h-96 object-cover"></img>    
-        </div>
         <div class = "py-2 px-12 max-w-7xl">
-            <div class = "py-4 sm:py-8 px-6 sm:px-12 mb-12">
+            <div class = "py-4 sm:py-8 px-6 sm:px-12">
                 <div class = "mb-4">
-                    <h1 class = "text-3xl sm:text-4xl font-bold text-gray-900 text-center leading-tight underline decoration-4 decoration-gateway-logo underline-offset-4">About Us</h1>
+                    <h1 class = "text-3xl sm:text-4xl font-bold text-gray-900 text-center leading-tight uppercase">About Us</h1>
                     {/* <hr class = "my-4 border-t-2 border-double border-gateway-logo"></hr> */}
                 </div>
-                <div class = "mt-2 leading-relaxed text-left sm:pl-4 mx-auto text-base sm:text-lg tracking-tight text-gray-800 font-semibold">
-                    <p class = "mb-2 p-2 sm:p-6 rounded-lg mx-auto leading-relaxed border-gateway-logo">Based in Toronto, Ontario, the Gateway Paper Company forges strong partnerships between advanced economies and emerging markets to unlock supply chain diversification and drive the global effort for a sustainable circular economy. 
-                        Backed by a multi-generational pulp and paper distribution business headquartered in Mumbai, India, Gateway Paper Company is a supplier of recycled North American paper grades internationally.</p>
-                    <p class = "mt-2 mb-2 p-2 sm:p-6 rounded-lg mx-auto border-gateway-logo">We specialize in sourcing high-quality recycled paper, providing end-to-end shipping, and ensuring accredited quality compliance to suit the requirements of our publicly-listed, international clientele.
-                        We take pride in unlocking resilient resource recovery supply chains, supporting circular economics and reducing the environmental impact of fibrous waste generation in North America.</p>
-                    <p class = "mt-2 p-2 sm:p-6 rounded-lg mx-auto border-gateway-logo">As we support recycled paper suppliers and consumers across continents, our commitment to sustainability, integrity, quality, and partnership remains paramount.
-                        At Gateway Paper Company, we are more than just exporters — we are a trusted partner in building a greener future, one shipment at a time.</p>
+                <div class = "flex overflow-hidden relative">
+                    <div class = "flex-1">
+                        <img src = {about_us_image} alt = "About Us" class = "h-full object-cover object-[65%_20%] rounded-xl"></img>    
+                    </div>
+                    <div class = "flex-1 mt-2 leading-relaxed text-left sm:pl-4 mx-auto text-base/7 sm:text-lg text-gray-800 font-semibold">
+                        <p class = "mb-2 p-2 sm:p-6 rounded-lg mx-auto leading-relaxed border-gateway-logo">Based in Toronto, the Gateway Paper Company is a trader and exporter of recycled paper commodities. Our business’ philosophy is rooted in its core values of partnership, integrity, quality, and sustainability.</p>
+                        <p class = "mt-2 mb-2 p-2 sm:p-6 rounded-lg mx-auto border-gateway-logo">Backed by a multi-generational pulp and paper distribution business headquartered in Mumbai, India, Gateway Paper Company is a supplier of standard recycled paper grades internationally. We specialize in sourcing high-quality recycled paper, providing end-to-end shipping, and ensuring accredited quality compliance to suit the requirements of our publicly-listed, international clientele. </p>
+                        <p class = "mt-2 p-2 sm:p-6 rounded-lg mx-auto border-gateway-logo">We take pride in unlocking resilient paper recovery supply chains, supporting circular economics and reducing the environmental impact of fibrous waste generation in North America. As we support recycled paper suppliers and consumers across continents, our commitment to partnership, integrity, quality, and sustainability is paramount.</p>
+                    </div>
                 </div>
             </div>
             <section id="values" className="mb-12 py-8 px-12">
-                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center leading-tight underline decoration-4 decoration-gateway-logo underline-offset-4">
+                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center leading-tight uppercase">
                     Our Core Values
                 </h2>
                 {/* <hr class = "my-4 border-t-2 border-double border-gateway-logo"></hr> */}
-                <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 max-w-5xl mx-auto cursor-pointer">
                     <div className="bg-gateway-logo-complement p-6 hover:shadow-lg transition-shadow duration-300 border-2 border-gateway-logo">
                         <div class = "flex flex-col items-center text-center">
                             <img src = {recycle_icon} class = "w-10 h-10 mr-1"></img>

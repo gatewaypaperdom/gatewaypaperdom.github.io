@@ -19,8 +19,8 @@ const Navbar = () => {
     toggleMobileMenu(); 
   };
     return (
-        <nav className="w-full bg-gray-500 flex items-center relative">
-          <a href="/" className="bg-gateway-logo-light flex space-x-2 flex-none px-10">
+        <nav className="w-full bg-gateway-logo flex items-center relative">
+          <a href="/" className="flex space-x-2 flex-none px-10">
             <img src={logo_resized} alt="Company Logo" className="max-w-72 h-28 cursor-pointer object-contain"/>
           </a>
           <ul className="hidden md:flex flex-1 justify-end space-x-9 text-base font-semibold text-white uppercase tracking-tighter px-12">
