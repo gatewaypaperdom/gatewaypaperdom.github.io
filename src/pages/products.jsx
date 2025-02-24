@@ -7,9 +7,9 @@ import prod_4_image from '../assets/prod_4.png'
 const Products = () => {
     return (
         <div class = "py-2 px-12 max-w-7xl">
-            <div class = "py-4 sm:py-8 px-6 sm:px-12 mb-12">
+            <div class = "py-4 sm:py-8 px-6 sm:px-12">
                 <div class = "relative inline-block">
-                    <h1 class = "text-3xl sm:text-4xl font-bold text-gray-900 text-center leading-tight underline decoration-4 decoration-gateway-logo underline-offset-4">Products</h1>
+                    <h1 class = "text-3xl sm:text-4xl font-bold text-gray-900 text-center leading-tight uppercase">Products</h1>
                 </div>  
                 {/* <hr class = "my-4 border-t-2 border-double border-gateway-logo"></hr> */}
                 {/* <div class = "absolute left-1/2 transform -translae-x-1/2 bottom-0 h-0.5 w-3/4 bg-gateway-logo"></div> */}

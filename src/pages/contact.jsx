@@ -30,7 +30,7 @@ const Contact = () => {
     return (
         <>
             <section id="contact" className="mb-12 py-12 sm:px-12 px-6 bg-gateway-logo-complement">
-                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center leading-tight pb-5 underline decoration-4 decoration-gateway-logo underline-offset-4">Contact Us</h2>
+                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center leading-tight pb-5 uppercase">Contact Us</h2>
                 <p className="text-md sm:text-lg text-gray-600 text-center">
                 Have any questions or inquiries? Get in touch with us!
                 </p>
@@ -38,22 +38,22 @@ const Contact = () => {
                 <div className="max-w-lg mx-auto mt-8 space-y-6">
                     <div className="flex flex-col items-center space-y-2">
                         <div className="flex items-center justify-center text-gray-600 mt-1">
-                        <img src={mail_icon} alt="Mail Icon" className="w-6 h-6 mr-1" />
-                        <a
-                            href="mailto:info@gatewaypaper.co@example.com"
-                            className="text-gateway-logo hover:underline transition duration-200"
-                        >
-                            info@gatewaypaper.co
-                        </a>
+                            <img src={mail_icon} alt="Mail Icon" className="w-6 h-6 mr-1" />
+                            <a
+                                href="mailto:info@gatewaypaper.co@example.com"
+                                className="text-gateway-logo hover:underline transition duration-200"
+                            >
+                                info@gatewaypaper.co
+                            </a>
                         </div>
                         <div className="flex items-center justify-center text-gray-600 mt-1">
-                        <img src={phone_icon} alt="Mail Icon" className="w-6 h-6 mr-1" />
-                        <a
-                            href="tel:+1234567890"
-                            className="text-gateway-logo hover:underline transition duration-200"
-                        >
-                            +1 647-574-2195
-                        </a>
+                            <img src={phone_icon} alt="Mail Icon" className="w-6 h-6 mr-1" />
+                            <a
+                                href="tel:+1234567890"
+                                className="text-gateway-logo hover:underline transition duration-200"
+                            >
+                                +1 647-574-2195
+                            </a>
                         </div>
                         <div className="flex items-center justify-center text-gray-600 mt-1">
                         <img src={whatsapp_icon} alt="Whatsapp Icon" className="w-6 h-6 mr-1" />

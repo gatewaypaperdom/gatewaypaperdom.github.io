@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import mobile_menu from '../assets/mobile_menu_icon.svg'
 import logo from '../assets/GATEWAY-2.png'
-import logo_resized from '../assets/GATEWAY-2-final.png'
+import logo_resized from '../assets/GATEWAY-inverse.png'
 
 const Navbar = () => {
   const [bMobileMenu, setMobileMenuOpen] = useState(false);
@@ -20,14 +20,15 @@ const Navbar = () => {
   };
     return (
         <nav className="w-full bg-gateway-logo flex items-center relative">
-          <a href="/" className="flex space-x-2 flex-none px-10">
+          <a href="/" className="flex space-x-2 flex-none px-5">
             <img src={logo_resized} alt="Company Logo" className="max-w-72 h-28 cursor-pointer object-contain"/>
           </a>
           <ul className="hidden md:flex flex-1 justify-end space-x-9 text-base font-semibold text-white uppercase tracking-tighter px-12">
-            <li><Link to="/about" className="hover:text-gateway-logo transition-colors duration-300">About Us</Link></li>
-            <li><Link to="/products" className="hover:text-gateway-logo transition-colors duration-300">Products</Link></li>
-            <li><Link to="/blog" className="hover:text-gateway-logo transition-colors duration-300">Blog</Link></li>
-            <li><Link to="/contact" className="hover:text-gateway-logo-complement transition-colors duration-300">Contact Us</Link></li>
+            <li><Link to="/" className="hover:text-gateway-logo hover:bg-gateway-logo-complement border border-transparent hover:border-gateway-logo/20 transition-all px-4 py-2 rounded-lg duration-300">Home</Link></li>
+            <li><Link to="/about" className="hover:text-gateway-logo hover:bg-gateway-logo-complement border border-transparent hover:border-gateway-logo/20 transition-all px-4 py-2 rounded-lg duration-300">About Us</Link></li>
+            <li><Link to="/products" className="hover:text-gateway-logo hover:bg-gateway-logo-complement border border-transparent hover:border-gateway-logo/20 transition-all px-4 py-2 rounded-lg duration-300">Products</Link></li>
+            <li><Link to="/blog" className="hover:text-gateway-logo hover:bg-gateway-logo-complement border border-transparent hover:border-gateway-logo/20 transition-all px-4 py-2 rounded-lg duration-300">Blog</Link></li>
+            <li><Link to="/contact" className="hover:text-gateway-logo hover:bg-gateway-logo-complement border border-transparent hover:border-gateway-logo/20 transition-all px-4 py-2 rounded-lg duration-300">Contact Us</Link></li>
           </ul>
 
           <button className="md:hidden text-gray-700 focus:outline-none" onClick={toggleMobileMenu}>
