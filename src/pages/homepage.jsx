@@ -36,7 +36,7 @@ const Homepage = () => {
         </header> */}
 
         <section id="video-intro" class = "relative h-screen w-full flex items-center justify-center overflow-hidden z-10 shadow-2xl">
-          <video autoPlay loop muted playsInline loading="Lazy" class = "w-auto min-w-full min-h-full max-w-none object-contain">
+          <video autoPlay loop muted playsInline controls preload = "metadata" loading="Lazy" class = "w-auto min-w-full min-h-full max-w-none object-contain">
             <source src = {intro_video} type='video/webm' />
             Browser does not support video playback.
           </video>
@@ -51,7 +51,7 @@ const Homepage = () => {
         <section id="whatsapp_sticky" class = "fixed bottom-12 right-12 z-50 flex items-center gap-x-2">
             <a href="https://wa.me/919769818895" target="_blank" class = "flex items-center bg-gateway-logo rounded-lg border-gateway-logo-complement border-2 drop-shadow-sm">
               <div class = "flex items-center">
-                <p class = "p-4  text-gray-800 font-semibold rounded-2xl">Connect with us on Whatsapp</p>
+                <p class = "p-4  text-gateway-logo-complement font-semibold rounded-2xl">Connect with us on Whatsapp</p>
                 <img src={whatsapp_homepage_icon} alt="Whatsapp Icon" class = "w-16 h-16 cursor-pointer"></img>
               </div>
             </a>
