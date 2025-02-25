@@ -1,4 +1,4 @@
-import about_us_image from '../assets/card_1.jpeg'
+import about_us_image from '../assets/card-about-us.webp'
 import handshake_icon from '../assets/handshake-icon.png'
 import recycle_icon from '../assets/recycling-icon.png'
 import quality_icon from '../assets/quality-icon.png'
