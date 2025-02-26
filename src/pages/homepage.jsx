@@ -51,7 +51,7 @@ const Homepage = () => {
         <section id="whatsapp_sticky" class = "fixed bottom-12 right-12 z-50 flex items-center gap-x-2">
             <a href="https://wa.me/919769818895" target="_blank" class = "flex items-center bg-gateway-logo rounded-lg border-gateway-logo-complement border-2 drop-shadow-sm">
               <div class = "flex items-center">
-                <p class = "p-4  text-gateway-logo-complement font-semibold rounded-2xl">Connect with us on Whatsapp</p>
+                <p class = "p-4  text-gateway-logo-complement font-bold rounded-2xl">Connect with us on Whatsapp</p>
                 <img src={whatsapp_homepage_icon} alt="Whatsapp Icon" class = "w-16 h-16 cursor-pointer"></img>
               </div>
             </a>
@@ -63,25 +63,25 @@ const Homepage = () => {
         <section id="new-services" class = "">
           <div class = "relative">  
             <div class = " grid grid-cols-1 max-w-full mx-auto tracking-tight text-justify">
-              <div class = "flex flex-row items-center md:gap-4 drop-shadow-2xl">
+              <div class = "flex flex-row items-center md:gap-4 drop-shadow-2xl bg-gateway-logo">
                 <img src={card_1_ac} alt="Toronto" class = "w-1/2 object-cover"></img>
-                <p class = "py-2 px-8 font-semibold text-2xl/loose text-gray-900">Gateway Paper Company helps manufacturers, recycling facilities, and paper mills in advanced and emerging economies access international recovered commodity markets, promoting supplier diversification for the sustainable recovery of fiber</p>
+                <p class = "py-2 px-8 font-semibold text-2xl/loose text-white/90">Gateway Paper Company helps manufacturers, recycling facilities, and paper mills in advanced and emerging economies access international recovered commodity markets, promoting supplier diversification for the sustainable recovery of fiber</p>
               </div>
               {/* <hr class = "my-4 border-t-2 border-double border-gateway-logo"></hr> */}
               <div class = "flex flex-row items-center relative drop-shadow-2xl">
                 <img src={card_2} alt="Handshake" class="max-w-full object-cover"></img>
-                <p class ="p-28 text-4xl tracking-wide absolute z-10 font-extrabold text-gateway-logo-complement">Your Gateway to Global Paper Recovery</p>
+                <p class ="p-28 text-5xl tracking-wide absolute z-10 font-bold text-gray-900/70">Your Gateway to Global Paper Recovery</p>
               </div>
               {/* <hr class = "border-t-2 border-double border-gateway-logo"></hr> */}
-              <div class = "flex flex-row items-center drop-shadow-2xl">
+              <div class = "flex flex-row items-center drop-shadow-2xl bg-gateway-logo-complement">
                 <p class="font-semibold py-2 px-8 relative border-gateway-logo/20 text-2xl/loose text-gray-900">We work with a variety of standard recycled paper grades, offering competitive pricing, bankable payment terms, comprehensive shipping solutions and internationally-accepted quality compliance
                 </p>
                 <img src={card_3} alt="Shipping Containers at the dock" class="w-1/2 object-cover relative"></img>
               </div>
             </div>
-            <div class = "mt-14">
-              <h2 class = "font-bold text-5xl uppercase drop-shadow-xl">Want to learn more about sustainable paper recovery?</h2>
-              <button class="font-semibold text bg-gateway-logo-light px-4 py-4 uppercase rounded-lg mt-8" onClick={goToContactPage}>Get in touch</button>
+            <div class = "bg-gateway-logo py-24 drop-shadow-2xl">
+              <h2 class = "font-semibold text-5xl uppercase drop-shadow-xl text-gateway-logo-complement">Want to learn more about sustainable paper recovery?</h2>
+              <button class="font-semibold text bg-gateway-logo-complement px-4 py-4 uppercase rounded-lg mt-8" onClick={goToContactPage}>Get in touch</button>
             </div>
           </div>
         </section>
